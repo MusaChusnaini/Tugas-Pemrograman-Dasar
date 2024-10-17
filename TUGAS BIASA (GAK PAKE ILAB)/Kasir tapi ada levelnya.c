@@ -51,6 +51,8 @@ int tentukanLevel(){
 		level = levelEnum=levelSetan;
 		break;
 	default:
+		printf("Maaf level tersebut tidak ada\n");
+		level = 0;
 		break;
 	}
 	return level;
