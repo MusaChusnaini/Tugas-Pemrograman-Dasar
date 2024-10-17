@@ -7,8 +7,10 @@ enum Menu{
 	Pecel=7000
 };
 enum Level{
+	levelNol = 0,
 	levelPertama=10, // 10% harga
-	levelKedua=15 // 15% harga
+	levelKedua=15, // 15% harga
+	levelSetan=50 // 50% harga
 };
 
 int Pesan(){
@@ -23,7 +25,7 @@ int Pesan(){
 	printf("------------------------------\n");
 	printf("|4    |   Pecel        | 7.000|\n");
 	printf("===============================\n");
-	printf("Silahkan pilih mau makan apa: ");
+	printf("Silahkan pilih mau makan apa (1/2/3/4): ");
 	int pilihan;
 	scanf("%d", &pilihan);
 	return pilihan;
@@ -31,8 +33,26 @@ int Pesan(){
 
 int tentukanLevel(){
 	int level;
-	printf("\nMau yang level berapa ?? :");
+	enum Level levelEnum;
+	printf("\nMau yang level berapa ?? (0/1/2/50):");
 	scanf("%d",&level);
+	switch(level)
+	{
+	case 0:
+		level = levelEnum=levelNol;
+		break;
+	case 1:
+		level = levelEnum=levelPertama;
+		break;
+	case 2:
+		level = levelEnum=levelKedua;
+		break;
+	case 50:
+		level = levelEnum=levelSetan;
+		break;
+	default:
+		break;
+	}
 	return level;
 }
 
