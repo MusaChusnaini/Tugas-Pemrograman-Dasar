@@ -76,6 +76,13 @@ int main(){
 		float potonganHarga = hargaTotal*(10/100.00);
 		printf("Diskon : %.1f", potonganHarga);
 		hargaTotal -= potonganHarga;
+	}else if(respond == 'n' || respond =='N'){
+		
+		float potonganHarga = hargaTotal*(0);
+		printf("Diskon : %.1f", potonganHarga);
+		hargaTotal -= potonganHarga;
+	}else{
+	return 0;
 	}
 	
 	int nominalBayar;
@@ -93,11 +100,9 @@ int main(){
 	}else{
 		printf("\nUang anda kurang!!");
 	}
-	int *ptr;
-	ptr = &hargaTotal;
 	
 	
 	printf("\nAlamat memori variabel total : %p", &hargaTotal);
-	printf("\nTerima Kasih!");2
+	printf("\nTerima Kasih!");
 	return 0;
 }
