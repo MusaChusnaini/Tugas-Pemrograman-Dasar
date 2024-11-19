@@ -18,6 +18,9 @@ int main(){
 		printf("Total Transaksi : %d\n", totalTransaksi);
 		printf("Apakah anda ingin mencatat transaksi lagi? : (1=Ya,0=Tidak)\n");
 		scanf(" %d", &respon);
+		if(respon != 1 && respon != 0){
+			return 0;
+		}
 		totalTransaksi = 0;
 		transaksi = 0;
 	
