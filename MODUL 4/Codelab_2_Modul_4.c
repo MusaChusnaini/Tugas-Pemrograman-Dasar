@@ -22,11 +22,13 @@ int main(){
 			// MENGECEK MENGGUNAKAN IF STATEMENT, BILA TERDETEKSI DUPLIKAT MAKA BREAK AGAR BERHENTI
 			if(nama[i] == nama[j]){
 				repeated = true;
+				break;
 			}
 		
 		}
 		// DI CONDITION INI HANYA PUTARAN SAAT REPEATED FALSE SAJA YANG MENYETAK CHAR
-			if(repeated){
+			if(!repeated){
+				
 				printf("%c", nama[i]);
 			}
 	}

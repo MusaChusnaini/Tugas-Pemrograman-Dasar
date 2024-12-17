@@ -7,13 +7,14 @@ int main(){
 	
 	float rataRata = 0;
 	int putaran = 0;
-	while(angka >= 0)
+	while(angka > 0)
 	{
 		putaran++;
 		printf("Masukkan Bilangan Bulat (Masukkan Bilangan Negatif Untuk Berhenti) : ");
-	   	scanf();
-	if(angka >= 0)
+	   	scanf("%f",&angka);
+	if(angka > 0)
 	{
+		
 		jumlah += angka;
 		rataRata = jumlah / putaran;
 	}

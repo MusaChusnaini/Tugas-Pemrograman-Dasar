@@ -1,0 +1,4 @@
+Nama : laptop
+Harga : 1000
+Jumlah : 2
+Harga Total : 2000
